@@ -12,7 +12,21 @@ body{
 }
 
 img{
-	max-width: 98%;
+	max-width: 100%;
+}
+
+h1{
+	padding-bottom: 25px;
+}
+
+p{
+	font-family: "Times New Roman",Georgia,Serif;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+a, a:hover{
+	color: #0092b3;
 }
 
 
@@ -64,24 +78,54 @@ i{
 /*-----------------------------------------------------------------------------------*/
 /*	Footer
 /*-----------------------------------------------------------------------------------*/ 
+/* General */
 footer{
 	padding: 100px 0px 0px 0px;
+	background-color: #333;
+	text-shadow: 1px 1px 0px #000;
 }
 
-footer h2{
-	padding: 25px 0px 25px 0px;
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
+	padding: 0px 0px 25px 0px;
+	color: #ffca3e;
+	text-shadow: 1px 1px 0px #000;
 }
 
+footer p, label{
+	color: #eee;
+}
+
+/* Location */
+.map{
+	padding: 5px;
+	border: 1px solid #eee;
+	-webkit-box-shadow: 1px 1px 1px #000;
+	-moz-box-shadow: 1px 1px 1px #000;
+	box-shadow: 1px 1px 1px #000;
+	margin-bottom: 20px;
+}
+
+#address{
+	float: left;
+	margin-right: 80px;
+}
+
+#address h3, #phone h3{
+	padding-bottom: 0px;
+}
+
+
+/* Contact Form */
 .form-horizontal .control-label{
 	width: 100px;
 }
 
-.form-horizontal .controls{
-	margin-left: 110px;
+.form-horizontal .controls {
+	margin-left: 110px;	
 }
 
-.form-horizontal .form-actions{
-	padding-left: 110px;
+.submit{
+	margin-left: 110px;
 }
 
 label.valid {
@@ -97,4 +141,12 @@ label.error {
 	color: red;
 	padding: 2px 8px;
 	margin-top: 2px;
+}
+
+/* Copyright */
+#copyright{
+	padding-top: 100px;
+	text-align: center;
+	color: #999;
+	font-size: 12px;
 }

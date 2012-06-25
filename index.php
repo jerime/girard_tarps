@@ -42,8 +42,11 @@
 	              <div class="nav-collapse">
 	                <ul class="nav">
 	                  <li class="active"><a href="#home"><i class="icon-home"></i>Home</a></li>
+	                  <li><a href="#about">About</a></li>
 	                  <li><a href="#employee-profile"><i class="icon-user"></i>Employee Profile</a></li>
-	                  <li><a href="#contact-form"><i class="icon-envelope-alt"></i>Contact</a></li>
+	                </ul>
+	                <ul class="nav pull-right">
+	                	<li><a href="#contact-form"><i class="icon-envelope-alt"></i>Contact</a></li>
 	                </ul>
 	              </div><!--/.nav-collapse -->
 	            </div>
@@ -76,7 +79,7 @@
 	          <img class="thumbnail" src="http://placehold.it/360x400">
 	        </div>
 	        <div class="span8">
-	          <h2>Employee Profile</h2>
+	          <h1><i class="icon-user"></i>Employee Profile</h1>
 	           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 	          <p><a class="btn" href="#">View details &raquo;</a></p>
 	        </div>
@@ -84,55 +87,73 @@
     </div> <!-- /container -->
 
     <!-- Start Footer -->
-    <footer class="container">
+    <footer>
+    	<div class="container">
         <div class="row">
           <div class="span4">
-            <h2>Heading 1</h2>
-             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
+            <h1><i class="icon-map-marker"></i>Location</h1>
+             	<div>
+             		<iframe class="map" width="350" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?hl=en&amp;aq=0&amp;ie=UTF8&amp;q=girard+tarps&amp;fb=1&amp;gl=us&amp;hq=girard+tarps&amp;hnear=0x87c7ece45d1ced3f:0x5ca76db922392e5a,Girard,+KS&amp;cid=0,0,7038196177697432981&amp;t=p&amp;ll=37.51439,-94.848146&amp;spn=0.006808,0.014977&amp;z=15&amp;output=embed"></iframe>
+             	</div>
+             	<div id="address">
+             		<h3>Address:</h3>
+             		<p>411 1/2 W. St. John<br/>Girard, KS 66743</p>
+             	</div>
+            	<div id="phone">
+             		<h3>Phone:</h3>
+             		<p>Phone: 620-724-8909<br/>Toll Free: 800-292-5047</p>
+             	</div>
           </div>
+          
           <div class="span4">
-            <h2>Heading 2</h2>
-             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
-         </div>
+          	<h1>Heading</h1>
+          		<p>random text</p>
+          </div>
+
+		  <!-- Start Contact Form -->
           <div class="span4">
-            <h2>Contact Us</h2>
-            <form action="" id="contact-form" class="form-horizontal">
+            <h1><i class="icon-envelope-alt"></i>Contact Us</h1>
+            <form action="" method="post" id="contact-form" class="form-horizontal">
               <fieldset>
-                  <div class="control-group">
-                    <label class="control-label" for="name">Your Name</label>
+              		
+						<div class="alert alert-info">
+							<p><strong>Message Successfully Sent!</strong></p>
+							<p>Thank you for using our contact form, <strong></strong>! Your email was successfully sent and we&rsquo;ll be in touch with you soon.</p>
+						</div>
+					
+                  <div class="control-group clearfix">
+                    <label class="control-label" for="name">Your Name:</label>
                     <div class="controls">
                       <input type="text" class="input-large" name="name" id="name">
                     </div>
                   </div>
                   <div class="control-group">
-                    <label class="control-label" for="email">Email Address</label>
+                    <label class="control-label" for="email">Email Address:</label>
                     <div class="controls">
                       <input type="text" class="input-large" name="email" id="email">
                     </div>
                   </div>
                   <div class="control-group">
-                    <label class="control-label" for="subject">Subject</label>
+                    <label class="control-label" for="subject">Subject:</label>
                     <div class="controls">
                       <input type="text" class="input-large" name="subject" id="subject">
                     </div>
                   </div>
                   <div class="control-group">
-                    <label class="control-label" for="message">Your Message</label>
+                    <label class="control-label" for="message">Your Message:</label>
                     <div class="controls">
                       <textarea class="input-large" name="message" id="message" rows="3"></textarea>
                     </div>
                   </div>
-                  <div class="form-actions">
-                    <button type="submit" class="btn btn-primary btn-large">Submit Message</button>
+                  <div>
+                    <button id="submit" type="submit" class="btn btn-primary btn-large submit">Submit Message</button>
                   </div>
                 </fieldset>
             </form>
           </div>
         </div>
-
-        <p>&copy; Copyright <?php echo date('Y'); ?> Girard Tarps Inc. | Web Services by <a href="http://cktwebservices.net">Craw-Kan Telephone Cooperative Inc.</a></p>
+       	<p id="copyright">&copy; Copyright <?php echo date('Y'); ?> <a href="http://girardtarps.net">Girard Tarps Inc.</a> | Web Services by <a href="http://cktwebservices.net">Craw-Kan Telephone Cooperative Inc.</a></p>
+       </div>
     </footer>
 
 
