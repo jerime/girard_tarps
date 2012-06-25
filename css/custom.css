@@ -1,0 +1,88 @@
+/*
+ * Copyright 2012 Craw-Kan Telephone Coopertive Inc.
+ * Author:  Jerime Carpenter
+ */
+
+/*-----------------------------------------------------------------------------------*/
+/*	Basic
+/*-----------------------------------------------------------------------------------*/
+body{
+	background-color: #eee;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+img{
+	max-width: 98%;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	Header
+/*-----------------------------------------------------------------------------------*/ 
+#header{
+	background-color: #0092b3;
+
+	padding: 0px 10px 0px 10px;
+	overflow: hidden;
+}
+
+#hero{
+	padding: 50px 0px 50px 0px;
+}
+
+.navbar .nav > li > a{
+	padding: 20px 20px 20px 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#logo{
+	margin-left: 9999px;
+
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	Content
+/*-----------------------------------------------------------------------------------*/ 
+#employee-profile{
+	padding: 100px 0px 80px 0px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Footer
+/*-----------------------------------------------------------------------------------*/ 
+footer{
+	padding: 100px 0px 0px 0px;
+}
+
+footer h2{
+	padding: 25px 0px 25px 0px;
+}
+
+.form-horizontal .control-label{
+	width: 100px;
+}
+
+.form-horizontal .controls{
+	margin-left: 110px;
+}
+
+.form-horizontal .form-actions{
+	padding-left: 110px;
+}
+
+label.valid {
+	width: 24px;
+	height: 24px;
+	background: url(../img/valid.png) center center no-repeat;
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+label.error {
+	font-weight: bold;
+	color: red;
+	padding: 2px 8px;
+	margin-top: 2px;
+}
