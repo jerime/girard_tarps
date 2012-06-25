@@ -11,7 +11,9 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet" type='text/css'>
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/font-awesome-ie7.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -39,9 +41,9 @@
 	              </a>
 	              <div class="nav-collapse">
 	                <ul class="nav">
-	                  <li><a href="#home">Home</a></li>
-	                  <li><a href="#employee-profile">Employee Profile</a></li>
-	                  <li><a href="#contact-form">Contact</a></li>
+	                  <li class="active"><a href="#home"><i class="icon-home"></i>Home</a></li>
+	                  <li><a href="#employee-profile"><i class="icon-user"></i>Employee Profile</a></li>
+	                  <li><a href="#contact-form"><i class="icon-envelope-alt"></i>Contact</a></li>
 	                </ul>
 	              </div><!--/.nav-collapse -->
 	            </div>
@@ -144,9 +146,18 @@
     <script src="js/custom.js"></script>
     
     <script>
-    $(document).ready(function() {
-    $("#logo").animate( {marginLeft: 25}, 1000 );
-    });
+    	$(document).ready(function() {
+    		$("#logo").animate( {marginLeft: 25}, 1000 );
+    	});
+    	
+    	$('.nav li').click(function(e) {
+    	$('.nav li').removeClass('active');
+  			var $this = $(this);
+  			if (!$this.hasClass('active')) {
+    		$this.addClass('active');
+  			}
+  			e.preventDefault();
+		});
     </script>
 
 

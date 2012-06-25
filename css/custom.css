@@ -21,7 +21,6 @@ img{
 /*-----------------------------------------------------------------------------------*/ 
 #header{
 	background-color: #0092b3;
-
 	padding: 0px 10px 0px 10px;
 	overflow: hidden;
 }
@@ -34,6 +33,19 @@ img{
 	padding: 20px 20px 20px 20px;
 	font-size: 18px;
 	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navbar .nav > li > a:hover{
+	font-style: italic;
+}
+
+.navbar .nav > li.active{
+	font-style: italic;
+}
+
+i{
+	padding-right: 10px;
 }
 
 #logo{
