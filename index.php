@@ -113,14 +113,11 @@
 		  <!-- Start Contact Form -->
           <div class="span4">
             <h1><i class="icon-envelope-alt"></i>Contact Us</h1>
+            <div id="contact">
             <form action="" method="post" id="contact-form" class="form-horizontal">
               <fieldset>
               		
-						<div class="alert alert-info">
-							<p><strong>Message Successfully Sent!</strong></p>
-							<p>Thank you for using our contact form, <strong></strong>! Your email was successfully sent and we&rsquo;ll be in touch with you soon.</p>
-						</div>
-					
+						
                   <div class="control-group clearfix">
                     <label class="control-label" for="name">Your Name:</label>
                     <div class="controls">
@@ -150,6 +147,7 @@
                   </div>
                 </fieldset>
             </form>
+            </div>
           </div>
         </div>
        	<p id="copyright">&copy; Copyright <?php echo date('Y'); ?> <a href="http://girardtarps.net">Girard Tarps Inc.</a> | Web Services by <a href="http://cktwebservices.net">Craw-Kan Telephone Cooperative Inc.</a></p>

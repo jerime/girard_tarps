@@ -116,6 +116,10 @@ footer p, label{
 
 
 /* Contact Form */
+.alert-info{
+	background-color: #0092b3;
+}
+
 .form-horizontal .control-label{
 	width: 100px;
 }

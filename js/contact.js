@@ -34,4 +34,30 @@ $(document).ready(function(){
 	    }
 	  });
 	  
+
+	
+	$("button#submit").click(function(){
+	
+	var name = $("input#name").val();
+	var email = $("input#email").val();
+	var subject = $("input#subject").val();
+	var message = $("textarea#message").val();
+	
+	var dataString = 'name=' + name + '&email' + email + '&subject' + subject + '&message' + message;
+	//alert (dataString);return false;
+	
+		$.ajax({
+			type: "POST",
+			url: "bin/process.php",
+			data: dataString,
+			success: function() {
+				$('#contact').html("<div id='message' class='alert alert-info'></div>");
+				$('#message').html("<p><strong>Message Successfully Sent!</strong></p>")
+				.append("<p>Thank you for using our contact form. Your email was successfully sent and we&rsquo;ll be in touch with you soon.</p>")
+				
+				}
+			});
+			return false;
+		});
+	  
 }); // end document.ready
