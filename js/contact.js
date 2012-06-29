@@ -43,7 +43,7 @@ $(document).ready(function(){
 	var subject = $("input#subject").val();
 	var message = $("textarea#message").val();
 	
-	var dataString = 'name=' + name + '&email' + email + '&subject' + subject + '&message' + message;
+	var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message;
 	//alert (dataString);return false;
 	
 		$.ajax({
@@ -52,8 +52,8 @@ $(document).ready(function(){
 			data: dataString,
 			success: function() {
 				$('#contact').html("<div id='message' class='alert alert-info'></div>");
-				$('#message').html("<p><strong>Message Successfully Sent!</strong></p>")
-				.append("<p>Thank you for using our contact form. Your email was successfully sent and we&rsquo;ll be in touch with you soon.</p>")
+				$('#message').html("<h3 id='contact-header'>Message Successfully Sent!</h3>")
+				.append("<p>We&rsquo;ll be in touch with soon.</p>")
 				.hide()
 				$('#message').fadeIn(1500);
 				}

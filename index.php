@@ -59,11 +59,6 @@
 		<div id="hero">
 	  		<div class="container">
 		        <div class="row" id="hero">
-		          <!-- <div class="span4">
-		            <h1>Girard Tarps Inc.</h1>
-		            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-		            <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-		          </div> -->
 		          <div class="span12">
 		            <img id="logo" src="img/logo.png">
 		          </div>
@@ -88,8 +83,13 @@
 
     <!-- Start Footer -->
     <footer>
+    	<div id="top"></div>
     	<div class="container">
         <div class="row">
+        	<div class="span12" id="tarp">
+        		<div id="grommet" class="clearfix"><img style="float: left;" src="img/grommet.png"><img style="float: right;" src="img/grommet.png"></div>
+        	</div>
+        	
           <div class="span4">
             <h1><i class="icon-map-marker"></i>Location</h1>
              	<div>

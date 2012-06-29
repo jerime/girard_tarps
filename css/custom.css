@@ -19,7 +19,7 @@ h1{
 	padding-bottom: 25px;
 }
 
-p{
+p, label, button{
 	font-family: "Times New Roman",Georgia,Serif;
 	font-size: 16px;
 	line-height: 25px;
@@ -80,9 +80,22 @@ i{
 /*-----------------------------------------------------------------------------------*/ 
 /* General */
 footer{
-	padding: 100px 0px 0px 0px;
+	background-image: url('../img/ftbg.png');
 	background-color: #333;
-	text-shadow: 1px 1px 0px #000;
+}
+
+#top{
+	background-image: url('../img/top.png');
+	background-repeat: repeat-x;
+	height: 100px;
+}
+
+#grommet{
+	padding: 25px 0px 50px 0px;
+}
+
+#tarp{
+	margin-top: -105px;
 }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
@@ -91,8 +104,9 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
 	text-shadow: 1px 1px 0px #000;
 }
 
-footer p, label{
+footer p, footer label{
 	color: #eee;
+	text-shadow: 1px 1px 0px #000;
 }
 
 /* Location */
@@ -116,6 +130,10 @@ footer p, label{
 
 
 /* Contact Form */
+#contact-header{
+	padding: 0px;
+}
+
 .alert-info{
 	background-color: #0092b3;
 }
