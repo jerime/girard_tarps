@@ -48,7 +48,7 @@ $(document).ready(function(){
 	
 		$.ajax({
 			type: "POST",
-			url: "bin/process.php",
+			url: "functions/process.php",
 			data: dataString,
 			success: function() {
 				$('#contact').html("<div id='message' class='alert alert-info'></div>");
