@@ -54,7 +54,8 @@ $(document).ready(function(){
 				$('#contact').html("<div id='message' class='alert alert-info'></div>");
 				$('#message').html("<p><strong>Message Successfully Sent!</strong></p>")
 				.append("<p>Thank you for using our contact form. Your email was successfully sent and we&rsquo;ll be in touch with you soon.</p>")
-				
+				.hide()
+				$('#message').fadeIn(1500);
 				}
 			});
 			return false;
