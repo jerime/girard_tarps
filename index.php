@@ -43,7 +43,6 @@
 	                <ul class="nav">
 	                  <li class="active"><a href="#home"><i class="icon-home"></i>Home</a></li>
 	                  <li><a href="#about">About</a></li>
-	                  <li><a href="#employee-profile"><i class="icon-user"></i>Employee Profile</a></li>
 	                </ul>
 	                <ul class="nav pull-right">
 	                	<li><a href="#contact-form"><i class="icon-envelope-alt"></i>Contact</a></li>
@@ -68,7 +67,7 @@
 	</div>
 
     <!-- Start Content -->
-    <div class="container" id="employee-profile">
+    <div class="container" id="about">
     	<div class="row">
 	        <div class="span4">
 	          <img class="thumbnail" src="http://placehold.it/360x400">
@@ -143,7 +142,7 @@
                     </div>
                   </div>
                   <div>
-                    <button id="submit" type="submit" class="btn btn-primary btn-large submit">Submit Message</button>
+                    <button id="submit" type="submit" class="btn-custom btn-primary btn-large submit">Submit Message</button>
                   </div>
                 </fieldset>
             </form>
