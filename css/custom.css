@@ -55,12 +55,26 @@ a, a:hover{
 	background-color: #0092b3;
 	padding: 0px 10px 0px 10px;
 	overflow: hidden;
+	moz-box-shadow: 0 8px 6px -6px black, inset 0 -8px 6px -6px black;
+    -webkit-box-shadow: 0 8px 6px -6px black, inset 0 -8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black, inset 0 -8px 6px -6px black;
 }
 
 #hero{
 	padding: 50px 0px 50px 0px;
 }
 
+
+i{
+	padding-right: 10px;
+}
+
+#logo{
+	margin-left: 9999px;
+
+}
+
+/* Navigation */
 .navbar .nav > li > a{
 	padding: 20px 20px 20px 20px;
 	font-size: 18px;
@@ -74,15 +88,6 @@ a, a:hover{
 
 .navbar .nav > li.active{
 	font-style: italic;
-}
-
-i{
-	padding-right: 10px;
-}
-
-#logo{
-	margin-left: 9999px;
-
 }
 
 

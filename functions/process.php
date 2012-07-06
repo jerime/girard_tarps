@@ -11,8 +11,10 @@ if ((isset($_POST['subject'])) && (strlen(trim($_POST['subject'])) > 0)) {
 if ((isset($_POST['message'])) && (strlen(trim($_POST['message'])) > 0)) {
 	$message = stripslashes(strip_tags($_POST['message']));
 	} else {$message = 'No message entered';}
-
-$recipient = 'jerime.carpenter@gmail.com';
-	mail($recipient, $subject, $message, "From: $email\r\nReply-To: $email\r\nX-Mailer: DT_formmail");
+	
+	$body = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nMessage:\n $message";
+	$recipient = 'jerime.carpenter@gmail.com';
+	
+	mail($recipient, $subject, $body, "From: $email\r\nReply-To: $email\r\nX-Mailer: DT_formmail");
 
 ?>

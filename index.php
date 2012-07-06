@@ -5,7 +5,7 @@
     <title>Girard Tarps Inc.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="Craw-Kan Web Services" content="">
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
