@@ -53,7 +53,6 @@ a, a:hover{
 /*-----------------------------------------------------------------------------------*/ 
 #header{
 	background-color: #0092b3;
-	padding: 0px 10px 0px 10px;
 	overflow: hidden;
 	moz-box-shadow: 0 8px 6px -6px black, inset 0 -8px 6px -6px black;
     -webkit-box-shadow: 0 8px 6px -6px black, inset 0 -8px 6px -6px black;
@@ -61,7 +60,7 @@ a, a:hover{
 }
 
 #hero{
-	padding: 50px 0px 50px 0px;
+	padding: 50px 0px 30px 0px;
 }
 
 
@@ -95,7 +94,12 @@ i{
 /*	Content
 /*-----------------------------------------------------------------------------------*/ 
 #about{
-	padding: 100px 0px 80px 0px;
+	padding-top: 100px;
+	padding-bottom: 80px;
+}
+
+#about h1{
+	margin-top: 20px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -188,10 +192,30 @@ label.error {
 	color: red;
 }
 
+
 /* Copyright */
 #copyright{
 	padding-top: 100px;
 	text-align: center;
 	color: #999;
 	font-size: 12px;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	Custom Media Queries
+/*-----------------------------------------------------------------------------------*/ 
+@media (max-width: 767px) {
+    body {
+        padding: 0;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .navbar-fixed-top {
+		margin-left: 0px;
+		margin-right: 0px;
 }

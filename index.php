@@ -165,7 +165,7 @@
     
     <script>
     	$(document).ready(function() {
-    		$("#logo").animate( {marginLeft: 25}, 1000 );
+    		$("#logo").animate( {marginLeft: 0}, 1000 );
     	});
     	
     	$('.nav li').click(function(e) {
