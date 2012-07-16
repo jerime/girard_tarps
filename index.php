@@ -105,8 +105,8 @@
           </div>
           
           <div class="span4">
-          	<h1>Heading</h1>
-          		<p>random text</p>
+            <h1><i class="icon-check"></i>Quality...Always</h1>
+              <p>Girard Tarps is the premier fabricator of custom tarps in southeast Kansas.  Whether it is a semi trailer, boat, camper canopy, grain truck, or a backyard patio shade, Girard Tarps can help!  If you need a new or replacement canvas or vinyl cover, Girard Tarps Inc. can create a custom design based on your specifications, and build it in our Girard Kansas shop.  Our staff has over 70 years combined experience in custom tarpaulin design and fabrication.  Call or stop by today.  We’ve got you covered!  Quality… Always! </p>
           </div>
 
 		  <!-- Start Contact Form -->
